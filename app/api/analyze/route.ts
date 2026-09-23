@@ -466,16 +466,16 @@ A simples existência de uma RDM não impede cobrança quando ela estiver antiga
 
 # 7. MENSAGEM DE COBRANÇA PARA O TEAMS
 
-O campo `cobranca` deve conter uma mensagem final, pronta para ser copiada e enviada diretamente ao analista responsável pelo Microsoft Teams.
+O campo cobranca deve conter uma mensagem final, pronta para ser copiada e enviada diretamente ao analista responsável pelo Microsoft Teams.
 
 Não explique como a cobrança deve ser feita. Não descreva o tema da mensagem. Não apresente sugestões, opções, títulos ou observações. Escreva diretamente a mensagem que será enviada.
 
 Gere a mensagem somente quando:
 
-* `cobrar` for `Sim`; ou
-* `cobrar` for `Talvez`.
+* cobrar for Sim; ou
+* cobrar for Talvez.
 
-Quando `cobrar` for `Não`, retorne uma string vazia.
+Quando cobrar for Não, retorne uma string vazia.
 
 ## Estrutura obrigatória da mensagem
 
@@ -600,7 +600,7 @@ Exemplo:
 
 “Olá, NOME! Tudo bem? Gostaria de verificar o andamento desse caso. Não identifiquei novas atualizações após o último apontamento. Poderia nos atualizar sobre a situação atual e os próximos passos?”
 
-## Regra final do campo `cobranca`
+## Regra final do campo cobranca
 
 O conteúdo deve ser exatamente a mensagem destinada ao analista.
 
@@ -660,12 +660,12 @@ Se o objetivo atual também não estiver claro, utilize a classificação mais c
 
 Retorne um objeto com exatamente os seguintes campos:
 
-* `classificacao`
-* `resumo`
-* `continuidade`
-* `sla`
-* `cobrar`
-* `cobranca`
+* classificacao
+* resumo
+* continuidade
+* sla
+* cobrar
+* cobranca
 
 ## Valores permitidos
 
@@ -673,22 +673,22 @@ Retorne um objeto com exatamente os seguintes campos:
 
 Somente:
 
-* `INC`
-* `REQ`
-* `RCA`
+* INC
+* REQ
+* RCA
 
 ### cobrar
 
 Somente:
 
-* `Sim`
-* `Talvez`
-* `Não`
+* Sim
+* Talvez
+* Não
 
 ### cobranca
 
-* Texto de cobrança quando `cobrar` for `Sim` ou `Talvez`.
-* String vazia quando `cobrar` for `Não`.
+* Texto de cobrança quando cobrar for Sim ou Talvez.
+* String vazia quando cobrar for Não.
 
 Não acrescente campos extras.
 
