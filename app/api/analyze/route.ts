@@ -464,7 +464,7 @@ Retorne “Não” quando:
 
 A simples existência de uma RDM não impede cobrança quando ela estiver antiga, parada ou sem qualquer acompanhamento. Considere sempre o contexto e a data da última evolução relevante.
 
-# # 7. MENSAGEM DE COBRANÇA PARA O TEAMS
+# 7. MENSAGEM DE COBRANÇA PARA O TEAMS
 
 O campo `cobranca` deve conter uma mensagem final, pronta para ser copiada e enviada diretamente ao analista responsável pelo Microsoft Teams.
 
